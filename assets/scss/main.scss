@@ -14,32 +14,17 @@
 @import 'accessibility/access.scss';
 
 /*** GENERAL ***/
-@import 'titles_actions/actions.scss';
-@import 'titles_actions/titles.scss';
 
 /*** HEADER ***/
 @import 'header_footer/header.scss';
-@import 'header_footer/socials.scss';
-@import 'header_footer/mainMenu.scss';
 @import 'header_footer/footer.scss';
 @import 'header_footer/uinav.scss';
-@import 'header_footer/access_panel.scss';
 
 /*** BLOCS ***/
-@import 'blocs/cover_img.scss';
-@import 'blocs/latest_videos.scss';
-@import 'blocs/latest_song.scss';
-@import 'blocs/tour_dates.scss';
-@import 'blocs/news.scss';
-@import 'blocs/newsletter.scss';
 
 /*** PAGES ***/
 @import 'pages/home.scss';
-@import 'pages/tourdates.scss';
-@import 'pages/royaltv.scss';
-@import 'pages/news.scss';
 @import 'pages/about.scss';
-@import 'pages/edito.scss';
 
 /** INIT **/
 * {
@@ -57,41 +42,20 @@
 }
 
 body {
-    background-color: $black;
+    background-color: $white;
     color: $grey;
-    font-family: 'firasans_regular', Arial, Helvetica, sans-serif;
+    font-family: $regular;
     overflow-x: hidden;
+    font-size:10px;
     width:100%;
-
-    &.popin_open {
-        overflow:hidden;
-
-        #access_panel {
-            right:0;
-        }
-
-        &_small {
-            &::before {
-                content:"";
-                position:fixed;
-                display:block;
-                top:0;
-                left:0;
-                width:100%;
-                height:100vh;
-                background-color:$black;
-                opacity:0.75;
-                z-index:110;
-            }
-        }
-    }
 
     &.lineheight {
         line-height: 1.5em;
     }
 }
-a, button {
-    color: $white;
+
+a {
+    color:$black;
 }
 
 ul {
@@ -115,11 +79,11 @@ input[type=text]:focus {
 
 /** WRAP **/
 .wrap {
-    max-width:152rem;
+    max-width:144rem;
     margin: 0 auto;
 
     @media screen and (max-width: $small-compt) {
-        max-width:120rem;
+        max-width:100%;
         padding:0 1rem;
     }
 }

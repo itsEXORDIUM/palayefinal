@@ -5,11 +5,15 @@
     font-weight:normal;
 }
 
+$regular: 'firasans_regular', Arial, Helvetica, sans-serif;
+
 // FIRA SANS ITALIC
 @font-face {
     font-family: 'firasans_italic';
     src: url('../fonts/FiraSans-Italic.ttf') format('truetype');
 }
+
+$italic: 'firasans_italic', Arial, Helvetica, sans-serif;
 
 // FIRA SANS SEMI BOLD
 @font-face {
@@ -17,11 +21,15 @@
     src: url('../fonts/FiraSans-SemiBold.ttf') format('truetype');
 }
 
+$semibold: 'firasans_semibold', Arial, Helvetica, sans-serif;
+
 // FIRA SANS BOLD
 @font-face {
     font-family: 'firasans_bold';
     src: url('../fonts/FiraSans-Bold.ttf') format('truetype');
 }
+
+$old: 'firasans_bold', Arial, Helvetica, sans-serif;
 
 // FIRA SANS BOLD ITALIC
 @font-face {
@@ -29,9 +37,13 @@
     src: url('../fonts/FiraSans-BoldItalic.ttf') format('truetype');
 }
 
+$bolditalic: 'firasans_bold_italic', Arial, Helvetica, sans-serif;
+
 // UNIFRAKTURMAGUNTIA REGULAR
 @font-face {
     font-family: 'unifrakturmaguntia';
     src: url('../fonts/UnifrakturMaguntia-Regular.ttf') format('truetype');
     font-weight:normal;
 }
+
+$regular_two: 'unifrakturmaguntia', Arial, Helvetica, sans-serif;

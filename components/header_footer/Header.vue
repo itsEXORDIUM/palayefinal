@@ -1,17 +1,16 @@
 <template>
     <header role="banner">
+        <h1>Nuxt Base</h1>
         <uiNav/>
-        <accessPanel/>
     </header>
 </template>
 
 <script>
 import uiNav from '~/components/header_footer/uiNav'
-import accessPanel from '~/components/header_footer/Access'
 
 export default {
   components: {
-      uiNav, accessPanel
+      uiNav
   }
 }
 </script>
